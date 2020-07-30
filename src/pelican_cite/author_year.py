@@ -34,7 +34,7 @@ from collections import Counter
 from pybtex.style.labels import BaseLabelStyle
 from pybtex.textutils import abbreviate
 
-_nonalnum_pattern = re.compile(r'[^\w]+', re.UNICODE)
+_nonalnum_pattern = re.compile(r'[^\w-]+', re.UNICODE)
 
 
 def _strip_accents(s):
