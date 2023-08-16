@@ -6,15 +6,15 @@ setuptools.setup(
     # Basic package information:
     name='pelican_cite',
     version='1.0.0',
-    packages=setuptools.find_packages('src'),
-    package_dir={'': 'src'},
+    packages=['pelican.plugins.pelican_cite'],
+    package_dir={"": "."},
 
 
     # Packaging options:
     include_package_data=True,
 
     # Package dependencies:
-    install_requires=['pelican>=4.0', 'pybtex'],
+    install_requires=['pelican>=4.8', 'pybtex>=0.24'],
 
     # Metadata for PyPI:
     author='Arvid Norlander',
